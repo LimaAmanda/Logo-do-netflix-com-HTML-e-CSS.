@@ -1,0 +1,68 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(37, 37, 48);
+}
+.netflix{
+    position: relative;
+    width: 360px;
+    height: 520px;
+    overflow: hidden;
+    transform: scale(0.8);
+    align-items: center;
+}
+
+.netflix span{
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background-color: #fff;
+    align-items: center;
+}
+.netflix span:nth-child(1) {
+    background-color: brown;
+    left: 0;
+    align-items: center;
+}
+
+.netflix span:nth-child(2) {
+    background-color:rgb(56, 8, 46) ;
+    left: 0;
+    z-index: 1;
+    transform-origin: top left ;
+    transform: skew(25deg) ;
+    box-shadow: 0 0 40px rgb(54, 49, 49);
+    align-items: center;
+}
+.netflix span:nth-child(3){
+background-color: rgb(100, 34, 153);  
+right: 0;  
+align-items: center;
+}
+
+h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(56, 20, 139);
+    font-size: 3rem;
+    text-transform:uppercase ;
+    letter-spacing: 10px;
+}
+.netflix::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    background: linear-gradiente(to right, transparent,rgb(156, 26, 26), #000);
+    z-index: 2;
+    align-items: center;
+}
